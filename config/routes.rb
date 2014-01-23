@@ -1,5 +1,6 @@
 CcwpFbAuth::Application.routes.draw do
-  get "user/friend_list"
+  get "user/friendlists"
+  get "user/friendlists/:id" => 'user#members'
   root to: 'books#index'
   get 'auth/:provider/callback' => 'sessions#create'
   get 'auth/failure' => redirect('/')

@@ -46,3 +46,5 @@ gem 'omniauth-facebook'
 gem 'fb_graph'
 
 gem 'koala', '~> 1.8.0rc1'
+
+gem 'bootstrap-sass'
