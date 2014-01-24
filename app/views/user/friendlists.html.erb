@@ -1,7 +1,4 @@
 <h1>Friend List</h1>
-<p>
-<%="Welcome, #{current_user.name}" %>
-</p>
 <div id="sidebar">
 	<%= pluralize(@friendlists.count, "friendlist") %>
 	<%= render partial: "friendlist", collection: @friendlists %>
